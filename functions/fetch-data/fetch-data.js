@@ -6,7 +6,8 @@ const handler = async (event) => {
   const url = `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`
   try {
     const { data } = await axios.get(url)
-
+    console.log(data.title) // this lets me know how to get to API contents
+    //document.getElementsByName('h1').innerText = `${data.title}`
     return {
       statusCode: 200,
       body: JSON.stringify(data)
