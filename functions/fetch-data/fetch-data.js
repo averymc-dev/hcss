@@ -1,9 +1,9 @@
 const axios = require('axios')
 
 const handler = async (event) => {
-  const unknown = event.queryStringParameters
+  // const unknown = event.queryStringParameters
   const API_KEY = process.env.API_KEY
-  const url = `http//api.nasa.gov/planetary/apod?api_key=${API_KEY}`
+  const url = `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`
   try {
     const { data } = await axios.get(url)
 
@@ -12,7 +12,8 @@ const handler = async (event) => {
       body: JSON.stringify(data)
     }
   } catch (error){
-    const { status, statusText, headers, data } = error.response
+    const { status, statusText, headers, data } = undefined
+    console.log(error)
     return {
       statusCode: status,
       body: JSON.stringify({status, statusText, headers, data})
