@@ -1,5 +1,45 @@
-@import url("~normalize.css/normalize.css"); /*TODO check on if this is working or not */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap');
 
 body {
-  background-color: blueviolet;
+  background-color: black;
+  font-family: serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: aliceblue;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+h1 {
+  font-family: 'DM Serif Text', 'Times New Roman', Times, serif;
+}
+
+h2 {
+  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+}
+
+p {
+  font-family: 'Cactus Classical Serif', 'Times New Roman', Times, serif;
+  line-height: .1 em;
+}
+
+.card {
+  background-color: rgb(240, 255, 255);
+  color: #414a4c;
+  border-radius: 15px;
+  padding: 15px 20px;
+  max-width: 50%;
+  display: inline-block;
+  box-shadow: 0 0 3em rgba(240, 255, 255, 1);
 }
