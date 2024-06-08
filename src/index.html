@@ -4,12 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hill Country Stargazers Society</title>
+  <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
+  <link rel="icon" type='image/svg+xml' sizes="any" href="data:image/svg+xml,<svg xmlns=%22http://www.google.com%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Hill Country Stargazers Society</h1>
-  <h2 id="date"></h2>
-  <h2 id="photoTitle"></h2>
+  <main class="container">
+    <h1 class="title">Hill Country Stargazers Society</h1>
+    <h2 class="title">Photo of the day brought to you by NASA</h2>
+    <div class="card">
+      <h2 id="date"></h2>
+      <h2 id="photoTitle"></h2>
+      <img src="#" alt="Photo of the day" id="img"><!--TODO change alt tag to title of photo-->
+      <p id="expl"></p>
+    </div>
+    <!--TODO adding this with a date picker <h3>Curious about another date?</h3> -->
+  </main>
 
   <script type="text/javascript" src="js/main.js"></script>
 </body>
