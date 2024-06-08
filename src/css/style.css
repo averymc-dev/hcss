@@ -39,7 +39,7 @@ p {
   color: #414a4c;
   border-radius: 15px;
   padding: 15px 20px;
-  max-width: 50%;
+  max-width: 75%;
   display: inline-block;
   box-shadow: 0 0 3em rgba(240, 255, 255, 1);
 }
