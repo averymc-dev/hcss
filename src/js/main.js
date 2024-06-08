@@ -1,3 +1,11 @@
-import data from "./../../functions/fetch-data/fetch-data.js"
+fetch(`/.netlify/functions/fetch-data`)
+  .then(res => { return res.json() })
+  .then(data => {
+    displayInfo(data)
+  })
 
-console.log(data.title)
+
+function displayInfo(data) {
+  console.log(data)
+  document.getElementById('photoTitle').innerText = data.title
+}
