@@ -10,8 +10,15 @@ let img = document.getElementById('img')
 let expl = document.getElementById('expl')
 
 function displayInfo(data) {
-  date.innerText = data.date
+  date.innerText = formatDate(data.date)
   title.innerText = data.title
   img.src = data.url
   expl.innerText = data.explanation
+}
+
+function formatDate(date) {
+  date = date.split('-')
+  const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  let [year, month, day] = [ ...date ]
+  return `${months[month - 1]} ${day}, ${year}`
 }
